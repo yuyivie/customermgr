@@ -51,7 +51,9 @@ public class Client {
 		cqm.getPage().setNowPage(2);
 //		Page<CustomerModel> page = t.s.getByConditionPage(cqm);
 		Page<CustomerModel> page = t.getS().getByConditionPage(cqm);
+		Page<CustomerModel> page2 = t.getS().getByConditionPage(cqm);
 		System.out.println("page==" + page);
+		System.out.println("page2==" + page2);
 //		System.out.println("list===" + list);
 	}
 }
